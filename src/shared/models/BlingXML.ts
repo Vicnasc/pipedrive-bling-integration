@@ -1,9 +1,9 @@
-import { ICreateOrderDTO } from '../dtos/ICreateOrderDTO';
+import { ICreateDailyOrderDTO } from '../../modules/orders/dtos/ICreateOrderDTO';
 
-export class CreateBlingXMLService {
+export class BlingXML {
   public pedido: string;
 
-  constructor(dataToConvert: ICreateOrderDTO) {
+  constructor(dataToConvert: ICreateDailyOrderDTO) {
     let result = '';
 
     Object.entries(dataToConvert.pedido).forEach(([group, values]) => {
