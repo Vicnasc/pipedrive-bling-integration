@@ -3,7 +3,9 @@ import { config } from 'dotenv';
 import cors from 'cors';
 import { apiRoutes } from './shared/routes/api.routes';
 
-config();
+config({
+  path: '../.env',
+});
 
 const api = express();
 
